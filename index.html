@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTIFAGOSE LAB</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      min-height: 100vh;
+    }
+    header {
+      padding: 48px 24px 32px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #f5c842;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #888;
+    }
+    main {
+      max-width: 680px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    h2 {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .apps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .app-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 16px;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #222;
+      transition: border-color 0.2s;
+    }
+    .app-card:hover { border-color: #444; }
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: #f5c842;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .app-info h3 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .app-info p {
+      font-size: 13px;
+      color: #888;
+      margin-top: 4px;
+    }
+    .badge {
+      margin-left: auto;
+      font-size: 11px;
+      color: #555;
+      flex-shrink: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 48px 24px;
+      font-size: 12px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ARTIFAGOSE LAB</h1>
+    <p>Independent app developer</p>
+  </header>
+  <main>
+    <h2>Apps</h2>
+    <div class="apps">
+      <a class="app-card" href="https://play.google.com/store/apps/details?id=com.artifagoselab.crypto_portfolio" target="_blank">
+        <div class="app-icon">🪙</div>
+        <div class="app-info">
+          <h3>Coin stock</h3>
+          <p>暗号資産ポートフォリオ管理</p>
+        </div>
+        <span class="badge">Android →</span>
+      </a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 ARTIFAGOSE LAB
+  </footer>
+</body>
+</html>
